@@ -1,6 +1,8 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 const AppContext = createContext();
+
+// this function will get the defaut theme from the customer's browser
 const getInitialDarkMode = () => {
   const storedDarkMode = localStorage.getItem('isDarkTheme');
   if (storedDarkMode !== null) {
@@ -18,6 +20,7 @@ const getInitialDarkMode = () => {
     return storedDarkMode === 'true';
   }
 };
+//
 
 export const AppProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
