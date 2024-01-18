@@ -319,7 +319,18 @@ Toggle Container
   max-width: var(--max-width);
   padding: 1rem 0;
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+}
+.dark-toggle {
+  background: red;
+  border-color: transparent;
+  width: 5rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
 /* 
