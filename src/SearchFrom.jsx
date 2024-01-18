@@ -5,7 +5,7 @@ const SearchFrom = () => {
   const { setSearchTerm } = useGlobalContext();
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(e.target.elements);
+    // console.log(e.target.elements);
     const searchValue = e.target.elements.search.value;
     if (!searchValue) return;
     setSearchTerm(searchValue);
@@ -17,7 +17,7 @@ const SearchFrom = () => {
         <input
           type="text"
           // value={searchValue}
-          className="form-input"
+          className="form-input search-input"
           placeholder="cat"
           name="search"
         />
