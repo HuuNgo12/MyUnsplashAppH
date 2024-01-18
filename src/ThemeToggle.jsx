@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
   return (
     // <Wrapper>
-    <section className="tonggle-container">
+    <section className="toggle-container">
       <button className="dark-tonggle" onClick={toggleDarkTheme}>
         {isDarkTheme ? (
           <BsFillMoonFill className="toggle-icon" />
